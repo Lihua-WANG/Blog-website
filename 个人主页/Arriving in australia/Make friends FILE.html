@@ -1,0 +1,281 @@
+<html>
+<head>
+<title>My file</title>
+<style type="text/css">
+	
+				
+fieldset {				
+width:700px;				
+margin-top: 20px;
+margin:auto;	
+border-radius:20px;		
+border: 1px solid #d6d6d6;				background-color: #fffff1;				line-height: 1.6em;}	
+		
+legend {
+margin:auto;
+font-size:200%;				
+font-style: italic;				
+color: #666666;}
+					
+input {	
+margin:6px auto 6px auto;			
+background-color: #ffffff;				border: 1px solid #999999;
+font-size: 120%;
+				
+color: #5a5854;
+				
+border: 1px solid #bdbdbd;
+				border-radius: 10px;
+				
+padding: 5px 10px 5px 10px;
+				background-repeat: no-repeat;
+				background-position: 8px 9px;
+				}
+
+input:active,
+input:focus,
+input:hover {	
+margin:6px auto 6px auto;			
+background-color: #d0e2f0;				border: 1px solid #999999;}
+
+input#submit {
+				
+color: #444444;
+				
+text-shadow: 0px 1px 1px #ffffff;
+				border-bottom: 2px solid #b2b2b2;
+				background-color: #b9e4e3;
+				background: -webkit-gradient(linear, left top, left bottom, from(#beeae9), to(#a8cfce));
+				background: -moz-linear-gradient(top, #beeae9, #a8cfce);
+	background: -o-linear-gradient(top, #beeae9, #a8cfce);
+	background: -ms-linear-gradient(top, #beeae9, #a8cfce);}
+
+	
+input#submit:hover {
+
+cursor: pointer;				
+color: #333333;
+				
+border: 1px solid #a4a4a4;
+				border-top: 2px solid #b2b2b2;
+				background-color: #a0dbc4;
+				background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#beeae9));
+				background: -moz-linear-gradient(top, #a8cfce, #beeae9);
+	background: -o-linear-gradient(top, #a8cfce, #beeae9);
+	background: -ms-linear-gradient(top, #a8cfce, #beeae9);}
+
+
+select {
+width:100px;
+border-radius: 10px;	
+padding:2px 16px;	
+margin:6px auto 6px auto;			
+background-color: #ffffff;				border: 1px solid #999999;
+font-size:90%;}	
+
+select:active,
+select:focus,
+select:hover {
+width:100px;	
+border-radius: 10px;	
+padding:2px 16px;
+margin:6px auto 6px auto;			
+background-color: #d0e2f0;				border: 1px solid #999999;
+font-size:90%;
+}
+
+textarea{
+border-radius: 10px;	
+padding:2px;
+margin:6px 2px 6px 2px;	
+border: 1px solid #999999;
+font-size:85%;
+font-color:#ffffff;
+}
+
+button{
+background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+	
+border-radius: 10px;	
+margin:6px 2px 6px 2px;	
+border: 1px solid #999999;}
+
+button:hover,button:active,
+button:focus{	
+border-radius: 	
+margin:6px 2px 6px 2px;	
+border: 1px solid #999999;
+background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#777777));
+
+}
+
+img{
+border-radius: 10px;	
+margin:6px 2px 6px 2px;	}
+
+table {				
+border-spacing: 0px;
+border-radius:30px;
+background-color:#fff1ff;
+margin:20px auto 20px auto;
+border-style:solid;
+}		
+		
+th, td {		
+text-align: center;				
+font-size:110%;
+background-color: rgba(239, 239, 239, 1);				border-top: 1px dot #f1f8fe;				border-bottom: 1px solid #cbd2d8;				border-right: 1px solid #cbd2d8;
+padding:5px}						
+
+.male,female{
+display:inline;}
+
+</style>
+
+</head>
+	
+<fieldset>
+<legend>Fill the table and make a friend</legend>
+<table cellpadding="0" cellspacing="0">
+<tr align="center" >
+
+<td >姓名:</font></td>
+<td>
+<input type="text"name="textfield" />
+</font></td></tr>
+
+<tr >
+<td>Wechat账号:</td>
+<td>
+<input type="text" name="textfield2" size="20" maxlength="10" />
+</font></td></tr>
+
+<tr>
+<td>Wechat密码：</td>
+<td>
+<input type="password" name="password" maxlength="10" minilength="5"? required="required"/>
+</td></tr>
+
+<tr>
+<td>性别:</td>
+<td id ="性别">
+<input id="female" type="radio" name="gender" value="f">
+<label for ="female">Female</label>
+<input id="male"type="radio"ame="gender"value="m">
+<label for="male">Male</label>
+</td></tr>
+
+<tr>
+<td>出生年月:</td>
+<td>
+<input type="date"name="date" />
+</font></td></tr>
+
+<tr>
+<td>Email:</td>
+<td>
+<input type="email" name="email" />
+</font></td></tr>
+
+<tr>
+<td>手机号码:</td>
+<td>
+<input type="'text" name="手机号码" />
+</font></td></tr>
+
+
+<tr>
+<td>兴趣爱好:</td>
+<td>
+<input id="dance" type="checkbox" name="intrests" value="dance" checked="checked" /><label for="dance">Dance</label>
+<input id="sing" type="checkbox" name="intersts" value="sing" checked="checked" /><label for="sing">Sing</label>
+<input id="draw" type="checkbox" name="intrests" value="draw" checked="checked" /><label for="draw">Draw</label>
+</font></td></tr>
+
+<tr>
+<td>最喜爱的乐器:</td>
+<td>
+<select name="instruments" size="1" >
+<option value="guitar" selected="selected">Guitar</option>
+<option value="drums">Drums</option>
+<option value="bass">Bass</option>
+<option value="violin">Violin</option>
+</font></td></tr>
+
+<tr>
+<td>备注:</td>
+<td>
+<textarea name="备注" cols="32" rows="5">Enter your comments~~~</textarea>
+</td></tr>
+
+<tr>
+<td>头像:</td>
+<td>
+<button><img src=" regester.jpg " width="75
+" height="100" />Picture</button>
+<input type="hidden" name="头像" value="picture" />
+</font></td></tr>
+
+<tr>
+<td colspan="2">
+<input type="submit"  value="submit" id="submit" />
+</td></tr>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

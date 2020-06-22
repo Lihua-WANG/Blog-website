@@ -1,0 +1,95 @@
+<!doctype html>
+<!-- <!DOCTYPE html> 声明为 HTML5 文档 -->
+
+<html lang="en">
+<!-- <html> 元素是 HTML 页面的根元素 -->
+
+<head>
+    <meta charset="utf-8">
+	<!-- <head> 元素包含了文档的元（meta）数据，如 <meta charset="utf-8"> 定义网页编码格式为 utf-8。 -->
+	
+    <title>Page Not Found</title>
+	<!-- <title> 元素描述了文档的标题 -->
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        * {
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        html {
+            color: #888;
+            display: table;
+            font-family: sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 2em auto;
+        }
+
+        h1 {
+            color: #555;
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 280px;
+        }
+
+        @media only screen and (max-width: 280px) {
+
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+
+        }
+
+    </style>
+	
+	
+</head>
+
+
+<body>
+<!-- <body> 元素包含了可见的页面内容 -->
+
+
+<div id="test1">
+    <h1>Page Not Found</h1>
+	<br>
+	<!-- <h1> 元素定义一个大标题 -->
+
+    <p>Sorry, but the page you were trying to view does not exist.</p></div>
+	<!-- <p> 元素定义一个段落 -->
+	<br>
+	<input type=button value="changecolor" onclick="changec()">
+<script type="text/javascript">
+function changec()
+{
+document.fgColor="#ffff00";
+document.title="this is a test";
+var obj1=document.getElementByld("test1");
+obj1.innerHTML="<p>I am changed</p>";
+objt1.style.backgroundColor="blue";}
+</script>
+
+
+</body>
+
+
+</html>
+<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
